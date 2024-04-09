@@ -21,7 +21,7 @@ services:
       - MODELS_PATH=/models
       # You can preload different models here as well.
       # See: https://github.com/go-skynet/model-gallery
-      - 'PRELOAD_MODELS=[{"url": "github:go-skynet/model-gallery/gpt4all-j.yaml", "name": "gpt-3.5-turbo"}]'
+      - 'PRELOAD_MODELS=[{"url": "github:ctfwizard/model-gallery/gpt4all-j.yaml", "name": "gpt-3.5-turbo"}]'
     volumes:
       - ./models:/models:cached
     command: ["/usr/bin/local-ai" ]
