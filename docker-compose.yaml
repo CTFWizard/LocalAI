@@ -23,7 +23,7 @@ services:
     environment:
       - MODELS_PATH=/models
       - DEBUG=true
-      - 'PRELOAD_MODELS=[{"url": "github:go-skynet/model-gallery/gpt4all-j.yaml", "name": "mistral-openorca"}]'
+      - 'PRELOAD_MODELS=[{"url": "github:CTFWizard/LocalAI/configuration/configuration/mistral-7b-openorca-gguf-q6.yml", "name": "mistral-openorca"}]'
       # - CONTEXT_SIZE=32768 # Sets the context size to maximum
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/readyz"]
